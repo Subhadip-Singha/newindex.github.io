@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <!-- lato fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <title>LOSANGELES MOUNTAINS</title>
+    <style type="text/css">
+
+      .container-fluid{
+        padding: 0;
+      }
+
+      /*fonts*/
+
+      h1,h2,h3,h4,h5{
+        font-family: 'Oswald', sans-serif;
+      }
+      *{
+        font-family: 'Lato', sans-serif;
+      }
+
+      body{
+        margin: 0px;
+
+      }
+      .uni-padding{
+        padding: 0% 12%;
+      }
+
+      /*firstnav*/
+
+      .firstnav{
+       background-image: url("coalation_project/header/header-complete-banner.jpg");
+       height: 600px;
+       background-size: cover;
+       background-position: center; 
+     } 
+     .firstnav ul li a{
+      color: white;
+      text-decoration: underline !important;
+    }
+
+    /*2nd image*/
+
+    .image-2nd{
+      background-image: url("coalation_project/background/bg.jpg");
+      height: 600px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+    }
+    .image-2nd h3{
+      color: #414f6b;
+      margin-top: 50px;
+      float: left;
+    }
+    .image-2nd p{
+      float: left;
+      color: #444444;
+    }
+    .text-bold-new{
+      font-size: 100px;
+      color: #6a7a96;
+      float: left;
+    }
+    .newmarg{
+      margin-top: 50px;
+    }
+
+    /*carousel*/
+
+    .newcaro{
+      overflow: auto;
+      margin: 0px;
+    }
+    .carousel-list{
+      list-style-type: none;
+      padding: 0;
+      display: inline-flex;
+    }
+    .carousel-list li{
+      margin: 0px 20px;
+    }
+    .bg-image{
+      background-image: url("coalation_project/carousel/cbg.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    .pad-100{
+      padding: 30px;
+    }
+    .carousel-indicators [data-bs-target] {
+      box-sizing: content-box;
+      flex: 0 1 auto;
+      width: 10px; 
+      height: 10px; 
+      padding: 0;
+      margin-right: 3px;
+      margin-left: 3px;
+      text-indent: -999px;
+      cursor: pointer;
+      background-clip: padding-box;
+      border: 0;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-radius: 100%; 
+    }
+   
+    /*climb*/
+
+    .climb{
+      display: flex;
+      overflow: auto;
+      padding: 10px;
+    }
+    .climb h3{
+      color: #414f6b;
+      float: left;
+      margin-right: 20px;
+      margin-top: 50px;
+      margin-left: 0px;   
+    }
+    .climb p{
+      margin-top: 30px;
+      color: #444444;
+    }
+    .text-bold{
+      font-size: 100px;
+      color: #a0a7b5;
+      float: left;
+    }
+      
+    /*Accordion*/
+
+    .acc-con, .accordionone, .accordion-body,.accordion-new{
+      padding: 0px;
+      margin: 0px;
+      overflow: auto;
+    }
+    .accordion-header button{
+      background-color: #414f6b;
+      color: white;
+      padding-left:170px;
+    }
+
+    /*scheudel*/
+
+    .sch-new{
+      margin-top: 100px;
+    }
+    .new-sch-new{
+      display: inline-flex;
+    }
+    .sch-new h3{
+      color: #414f6b;
+    }
+    .ul-first{
+      padding: 0;
+      color: #444444;
+    }
+    .ul-2nd{
+      padding-left:60px;
+      color: #444444;
+    }
+    .bg-color{
+      background-image: url(coalation_project/photo-tab1.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 600px;
+      justify-content: center;
+      overflow: auto;
+    }
+    .bg-color2{
+      background-image: url(coalation_project/photo-tab2.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 600px;
+      justify-content: center;
+      overflow: auto;
+    }
+
+    /*footer*/
+
+    .footer{
+      background-color: #414f6b;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      overflow: auto;
+    }
+    .footer h5{
+      color: #63769d;
+      display: inline-flex;
+      margin: 0px;  
+    }
+    .footer p{
+      float: right;
+      color: #63769d;
+      margin-top: 20px;
+    }
+       
+
+    @media only screen and (max-width: 1024px){
+
+      /*carousel*/
+
+      .carousel-list{
+        display: inline-block;
+      }
+      .carousel-list li{
+        width: 100%;
+        margin: 10px 0px;
+      }
+
+      /* accordian*/
+
+      .accordion-header button{
+        padding-left: 130px;
+      }
+      .climb p{
+        padding-top: 100px;
+        text-align: center;
+      }
+      .climb h3{
+        padding-top: 65px;
+        margin-top: 0px;
+      }
+      .text-bold{
+        padding-left: 50px;
+      }
+
+      /*footer*/
+
+      .footer{
+        text-align: center;
+      }
+    }
+
+    /*2ndnav*/
+
+    .nav-two ul li a{
+      text-decoration: underline;
+      color: #414f6b;
+    }
+     
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid" class="divone">
+      <!-- first navbar -->
+      <div class="firstnav">
+        <div class="uni-padding">
+          <!-- navbar-light -->
+          <nav class="navbar navbar-expand-lg navbar-light" >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="coalation_project/header/logo.jpg">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">01. HISTORY</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">02. TEAM</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>   
+        </div>   
+      </div>
+
+      <!-- 2nd Navbar -->
+
+      <div class="container-fluid">
+        <div class="uni-padding">
+         <div class="nav-two">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="coalation_project/sticky-nav/logo2.jpg">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">01. HISTORY</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">02. TEAM</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div> 
+    </div>
+        
+    <!--2nd image  -->
+
+    <div class="image-2nd">
+      <div class="uni-padding">
+        <div class="newmarg">
+          <strong><h1 class="text-bold-new">01.</h1></strong>
+          <h3>HISTORY</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </p> 
+        </div>
+      </div>
+    </div>
+      
+    <!-- carousel -->
+
+    <div class="newcaro">
+     <div class="carouselone bg-image">
+      <div class="uni-padding">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div> 
+          <div class="carousel-inner">
+            <div class="carousel-item active text-center pad-100">
+              <ul class="carousel-list">
+                <li>
+                  <img src="coalation_project/carousel/photo1.jpg">
+                </li>
+                <li>
+                  <img src="coalation_project/carousel/photo2.jpg">
+                </li>
+                <li>
+                  <img src="coalation_project/carousel/photo1.1.jpg">
+                </li>
+                <li>
+                  <img src="coalation_project/carousel/photo2.2.jpg">
+                </li>
+              </ul>
+            </div>
+            <div class="carousel-item text-center pad-100">
+              <ul class="carousel-list">
+                <li>
+                  <img src="coalation_project/carousel/photo1.jpg">
+                </li>
+                <li>
+                  <img src="coalation_project/carousel/photo2.jpg">
+                </li>
+                <li>
+                  <img src="coalation_project/carousel/photo1.1.jpg">
+                </li>
+                <li>
+                  <img src="coalation_project/carousel/photo2.2.jpg">
+                </li>
+              </ul>
+            </div>
+            <div class="carousel-item text-center pad-100">
+              <ul class="carousel-list">
+                <li>
+                  <img src="coalation_project/carousel/photo1.jpg">
+                </li>
+                <li>
+                  <img src="coalation_project/carousel/photo2.jpg">
+                </li>
+                <li>
+                  <img src="coalation_project/carousel/photo1.1.jpg">
+                </li>
+                <li>
+                  <img src="coalation_project/carousel/photo2.2.jpg">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+<!-- climb -->
+<div class="climb">
+  <div class="uni-padding">
+    <strong><h1 class="text-bold">02.</h1></strong>
+    <h3>CLIMB</h3>
+    <P>Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </P>    
+  </div>   
+</div>
+
+<!-- Accordion -->
+
+<div class="acc-con">
+  <div class="accordionone">
+    <div class="accordion" id="accordionExample">   
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">  
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
+            MOUNTAIN 1
+          </button>
+        </h2> 
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="accordion-new">
+              <div class="bg-color">
+                <div class="uni-padding">
+                  <div class="sch-new" >
+                    <h3>SCHEDULE</h3>
+                    <div class="new-sch-new">
+                      <ul style="list-style-type: none;" class="ul-first">
+                        <li>25 Nov 2016</li>
+                        <li>28 Nov 2016</li>
+                        <br>
+                        <li>18 Dec 2016</li>
+                        <br>
+                        <li>07 Jan 2017</li>
+                      </ul>
+                      <ul style="list-style-type: none;" class="ul-2nd">
+                        <li>Vestibulum</li>
+                        <li>Vestibulum</li>
+                        <br>
+                        <li>Vestibulum</li>
+                        <br>
+                        <li>Vestibulum</li>
+                      </ul>
+                    </div>    
+                  </div>  
+                </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        MOUNTAIN 2
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div class="accordion-new">
+          <div class="bg-color2">
+            <div class="uni-padding">
+              <div class="sch-new" >
+                <h3>SCHEDULE</h3>
+                <div class="new-sch-new">
+                  <ul style="list-style-type: none;" class="ul-first">
+                    <li>17 Nov 2016</li>
+                    <br>
+                    <li>13 Dec 2016</li> 
+                    <li>28 Dec 2016</li>
+                    <br>
+                    <li>09 Feb 2017</li>
+                  </ul>
+                  <ul style="list-style-type: none;" class="ul-2nd">
+                    <li>Vestibulum</li>
+                    <br>
+                    <li>Vestibulum</li>
+                    <li>Vestibulum</li>
+                    <br>
+                    <li>Vestibulum</li>
+                  </ul>
+                </div>   
+              </div>  
+            </div>
+          </div>
+        </div>   
+      </div>
+    </div>
+  </div>  
+</div>
+</div>   
+</div>
+
+<!-- footer -->
+
+<div class="footer">
+  <div class="uni-padding">
+    <img src="coalation_project/footer/logonew1.jpg">
+    <h5>LOSANGELES<br>
+    MOUNTAINS</h5>
+    <p>COPYRIGHT 2016. ALL RIGHTS RESERVED</p>  
+  </div>  
+</div> 
+</div>
+
+    
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+ </body>
+</html>
